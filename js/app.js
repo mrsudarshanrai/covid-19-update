@@ -10,8 +10,8 @@ let d = apiCall()
     .then(p => {
 
         $('.tconfirmed').html(p.latest.confirmed);
-        $('.tdeaths').html(p.latest.confirmed);
-        $('.trecovered').html(p.latest.confirmed);
+        $('.tdeaths').html(p.latest.deaths);
+        $('.trecovered').html(p.latest.recovered);
 
         for (x in p.locations) {
             $('.covid-data-container').append(`<div class="covid-data"><div class='country'>${p.locations[x].country} <br> <small> ${p.locations[x].province}</i></small> </div><div class="status">
