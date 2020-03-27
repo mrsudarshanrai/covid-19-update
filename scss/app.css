@@ -106,12 +106,9 @@ body {
   background: transparent;
   border: 1px solid #ddd;
   border-radius: 4px;
+  padding: 10px;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 69c86a41e8b9531ee8ad57191dff339681cf82e9
 .main-container main .covid-data .country {
   width: 100%;
   border-radius: 4px;
