@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background: #fff;
+  scroll-behavior: smooth;
+}
+
+.main-container {
+  width: 100%;
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background: #444;
+    height: 100px;
+
+    h3 {
+      color: #aaa;
+      font-size: 1.5em;
+      padding: 10px;
+      border: 1px solid;
+      border-radius: 5px;
+    }
+  }
+.sticky {
+  position: fixed;
+  top: 0;
+  box-shadow: 0px 1px 20px rgba(0, 0, 0,.3);
+}
+
+  .search {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    background-color:#fff;
+    padding: 0 0 10px 0;
+    input {
+      width: 80%;
+      border: 1px solid #aaa;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+    }
+
+    .total{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      
+      p{
+        text-align: center;
+        color: #aaa;
+        font-size: 1.4em;
+        span{
+          color: #444;
+          font-size: .8em;
+        }
+      }
+    }
+  }
+
+  main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+    grid-gap: 1em;
+    margin: 150px 0;
+    .covid-data {
+      width: 100%;
+      height: fit-content;
+      background: transparent;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+
+      .country {
+        width: 100%;
+        border-radius: 4px;
+        color: #aaa;
+        font-weight: bolder;
+        padding: 5px;
+        font-size: 1.3em;
+
+        small {
+          color: #444;
+        }
+      }
+
+      .status {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 5px;
+        flex-wrap: wrap;
+
+        .c {
+          color: #255aa8;
+        }
+
+        .d {
+          color: #d32f2f;
+        }
+        .r {
+          color: rgb(3, 155, 15);
+        }
+      }
+    }
+  }
+}
+
+footer{
+  background:#fff;
+  color: #444;
+  text-align: center;
+  height: 60px;
+  padding: 10px;
+}
+
+@media (max-width: 1007px) {
+  .main-container {
+    main {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .main-container {
+    main {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

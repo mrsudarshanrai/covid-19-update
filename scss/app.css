@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background: #fff;
+  scroll-behavior: smooth;
+}
+
+.main-container {
+  width: 100%;
+}
+
+.main-container header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+  background: #444;
+  height: 100px;
+}
+
+.main-container header h3 {
+  color: #aaa;
+  font-size: 1.5em;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+.main-container .sticky {
+  position: fixed;
+  top: 0;
+  -webkit-box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.3);
+}
+
+.main-container .search {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+  padding: 0 0 10px 0;
+}
+
+.main-container .search input {
+  width: 80%;
+  border: 1px solid #aaa;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.main-container .search .total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main-container .search .total p {
+  text-align: center;
+  color: #aaa;
+  font-size: 1.4em;
+}
+
+.main-container .search .total p span {
+  color: #444;
+  font-size: .8em;
+}
+
+.main-container main {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  padding: 10px;
+  grid-gap: 1em;
+  margin: 150px 0;
+}
+
+.main-container main .covid-data {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: transparent;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+<<<<<<< HEAD
+=======
+
+>>>>>>> 69c86a41e8b9531ee8ad57191dff339681cf82e9
+.main-container main .covid-data .country {
+  width: 100%;
+  border-radius: 4px;
+  color: #aaa;
+  font-weight: bolder;
+  padding: 5px;
+  font-size: 1.3em;
+}
+
+.main-container main .covid-data .country small {
+  color: #444;
+}
+
+.main-container main .covid-data .status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 5px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main-container main .covid-data .status .c {
+  color: #255aa8;
+}
+
+.main-container main .covid-data .status .d {
+  color: #d32f2f;
+}
+
+.main-container main .covid-data .status .r {
+  color: #039b0f;
+}
+
+footer {
+  background: #fff;
+  color: #444;
+  text-align: center;
+  height: 60px;
+  padding: 10px;
+}
+
+@media (max-width: 1007px) {
+  .main-container main {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .main-container main {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+/*# sourceMappingURL=app.css.map */
