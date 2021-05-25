@@ -1,40 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./scss/app.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./scss/app.css" />
 
     <!--ajax,jquery-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <title>COVID-19 update</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <section class="main-container">
-        <header>
-            <h3>Live COVID-19 update</h3>
-        </header>
-        <div class="search">
-            <input onkeyup="search()" type="text" id="search" placeholder="Search by country">
-            <div class="total">
-                <p>Confirmed <br><span class="tconfirmed"></span> </p>
-                <p>Deaths <br><span class="tdeaths"></span> </p>
-                <p>Recovered <br> <span class="trecovered"></span> </p>
-            </div>
+      <header>
+        <h3>Live COVID-19 update</h3>
+      </header>
+      <div class="search">
+        <input
+          onkeyup="search()"
+          type="text"
+          id="search"
+          placeholder="Search by country"
+        />
+        <div class="total">
+          <p>Confirmed <br /><span class="tconfirmed"></span></p>
+          <p>Deaths <br /><span class="tdeaths"></span></p>
+          <p>
+            Recovered <br />
+            <span class="trecovered"></span>
+          </p>
+          <!--  -->
         </div>
-        <main class="covid-data-container">
-        </main>
+      </div>
+      <main class="covid-data-container"></main>
     </section>
     <footer>
-        API by <a href="https://github.com/ExpDev07/coronavirus-tracker-api" target="_blank"
-            rel="noopener noreferrer">ExpDev07</a> <br>
-            Github <a href="https://github.com/mrsudarshan/covid-19-update">COVID-19-update source code</a>
+      API by
+      <a
+        href="https://github.com/ExpDev07/coronavirus-tracker-api"
+        target="_blank"
+        rel="noopener noreferrer"
+        >ExpDev07</a
+      >
+      <br />
+      Github
+      <a href="https://github.com/mrsudarshan/covid-19-update"
+        >COVID-19-update source code</a
+      >
     </footer>
     <script src="./js/app.js"></script>
-</body>
-
+  </body>
 </html>

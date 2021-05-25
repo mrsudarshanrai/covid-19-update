@@ -84,7 +84,7 @@ body {
 
 .main-container .search .total p span {
   color: #444;
-  font-size: .8em;
+  font-size: 0.8em;
 }
 
 .main-container main {
@@ -116,6 +116,17 @@ body {
   font-weight: bolder;
   padding: 5px;
   font-size: 1.3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container main .covid-data .country .country_flag {
+  width: 30px;
+  margin: 0px 10px;
 }
 
 .main-container main .covid-data .country small {
