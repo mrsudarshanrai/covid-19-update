@@ -14,4 +14,4 @@ Provides up-to-date data about Coronavirus outbreak. Includes numbers about conf
 
 ## View Live
 
-https://mrsudarshan.github.io/covid-19-update/
+https://mrsudarshanrai.github.io/covid-19-update
